@@ -61,11 +61,11 @@
   }
   .myskills-languages {
     width: 90%;
-    height: 275px;
+    height: fit-content;
     padding: 20px;
   }
   .language-list {
-    gap: 0 15px;
+    gap: 9px 15px;
   }
   .language-list-li {
     height: 40px;
@@ -112,7 +112,7 @@
     width: 32%;
   }
   .yt-video-details {
-    padding: 18px;
+    padding: 21px;
   }
   .yt-video-details-duration {
     height: 22px;

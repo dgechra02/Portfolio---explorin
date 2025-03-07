@@ -72,7 +72,7 @@
     display: none;
   }
   .bodyy {
-    padding: 40px 0;
+    padding: 50px 0;
   }
 
   /* myskills */
@@ -90,11 +90,11 @@
   }
   .myskills-languages {
     width: 90%;
-    height: 275px;
+    height: fit-content;
     padding: 15px;
   }
   .language-list {
-    gap: 0 10px;
+    gap: 6px 10px;
   }
   .language-list-li {
     height: 37px;
@@ -145,7 +145,7 @@
     height: 200px;
   }
   .yt-video-details {
-    padding: 10px;
+    padding: 17px;
   }
   .yt-video-details-duration {
     height: 20px;
