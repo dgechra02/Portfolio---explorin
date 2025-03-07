@@ -1,0 +1,248 @@
+/* media query */
+@media (min-width: 1024px) and (max-width: 1350px) {
+  header {
+    padding: 20px 25px;
+  }
+  .brand-container {
+    gap: 10px;
+  }
+  .brand-container img {
+    width: 30px;
+  }
+  nav,
+  nav ul {
+    gap: 30px;
+    font-size: 20px;
+  }
+  .resume-cta {
+    width: 110px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  /* intro section */
+  .intro {
+    padding: 35px 50px;
+  }
+  .intro-title {
+    width: 600px;
+    height: 55px;
+    font-size: 35px;
+  }
+  .intro-subtitle {
+    gap: 7px;
+    height: 50px;
+    font-size: 22px;
+  }
+  .intro-about {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .my-image img {
+    width: 275px;
+  }
+
+  .bodyy {
+    padding: 75px 0;
+  }
+
+  /* myskills */
+  .myskills-title {
+    width: 160px;
+    height: 48px;
+    font-size: 35px;
+    gap: 8px;
+  }
+  .myskills-about {
+    width: 960px;
+    height: 60px;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .myskills-languages {
+    width: 90%;
+    height: 275px;
+    padding: 20px;
+  }
+  .language-list {
+    gap: 0 15px;
+  }
+  .language-list-li {
+    height: 40px;
+    font-size: 17px;
+    gap: 8px;
+    padding: 12px;
+  }
+  .language-list-li img {
+    width: 26px;
+  }
+  .language-list-li-sql img {
+    width: 21px;
+  }
+
+  /* video-section */
+  .video-section {
+    gap: 10px;
+    margin-top: 75px;
+  }
+  .video-section-title {
+    width: 350px;
+    height: 48px;
+    font-size: 35px;
+    line-height: 50px;
+    gap: 7px;
+  }
+  .video-section-subtitle {
+    width: 960px;
+    height: 40px;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .video-section-button {
+    width: 265px;
+    height: 55px;
+  }
+  .video-section-button a {
+    font-size: 19px;
+  }
+  .video-section-videos {
+    width: 90%;
+  }
+  .video-section-video {
+    width: 32%;
+  }
+  .yt-video-details {
+    padding: 18px;
+  }
+  .yt-video-details-duration {
+    height: 22px;
+    margin: 6px 0;
+  }
+  .yt-video-details-title {
+    height: 33px;
+    font-size: 22px;
+  }
+  .yt-video-details-coach {
+    height: 22px;
+  }
+
+  /* projects-section */
+  .projects-section {
+    gap: 20px;
+    margin-top: 75px;
+  }
+  .projects-section-title {
+    height: 48px;
+    font-size: 35px;
+  }
+  .projects-section-about {
+    width: 960px;
+    height: 40px;
+    font-size: 22px;
+  }
+  .projects-section-projects {
+    width: 90%;
+  }
+  .projects-section-project {
+    width: 32%;
+  }
+  .projects-section-project-details {
+    padding: 25px 20px;
+    gap: 5px;
+  }
+  .projects-section-project-details-title {
+    height: 32px;
+    font-size: 24px;
+  }
+  .projects-section-project-details-about {
+    height: 33px;
+  }
+
+  /* education-section */
+  .education-section {
+    margin-top: 75px;
+  }
+  .education-section-title {
+    height: 48px;
+    font-size: 35px;
+  }
+  .edu-section-desc {
+    width: 960px;
+  }
+  .education-section-description {
+    width: 100%;
+    height: 40px;
+    font-size: 22px;
+  }
+  .education-section-list {
+    width: 90%;
+    height: fit-content;
+    gap: 18px;
+  }
+  .education-section-list-explorin,
+  .education-section-list-college,
+  .education-section-list-school1,
+  .education-section-list-school2 {
+    padding: 25px;
+    width: 48%;
+  }
+  .education-section-list-explorin-title,
+  .education-section-list-college-title,
+  .education-section-list-school1-title,
+  .education-section-list-school2-title {
+    height: 32px;
+    font-size: 21px;
+  }
+  .education-section-list-explorin-year,
+  .education-section-list-college-year,
+  .education-section-list-school1-year,
+  .education-section-list-school2-year {
+    height: 32px;
+    font-size: 21px;
+  }
+  .education-section-list-explorin-course,
+  .education-section-list-college-course,
+  .education-section-list-school1-course,
+  .education-section-list-school2-course {
+    height: 32px;
+  }
+  .education-section-list-explorin-image,
+  .education-section-list-college-image,
+  .education-section-list-school1-image,
+  .education-section-list-school2-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* footer */
+  footer {
+    padding: 40px;
+  }
+  .footer-title {
+    width: 200px;
+    height: 65px;
+    font-size: 43px;
+  }
+  .footer-description {
+    width: 90%;
+    height: 65px;
+    font-size: 23px;
+  }
+  .footer-links {
+    width: 70%;
+    height: 45px;
+  }
+  .footer-button {
+    padding: 10px;
+  }
+  .footer-button a {
+    gap: 9px;
+  }
+  .footer-button a img {
+    width: 28px;
+  }
+  .footer-button a span {
+    height: 30px;
+    font-size: 19px;
+  }
+}

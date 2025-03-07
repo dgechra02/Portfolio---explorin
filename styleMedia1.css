@@ -1,0 +1,288 @@
+/* media query */
+@media (min-width: 0px) and (max-width: 786px) {
+  header {
+    padding: 15px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .brand-container {
+    gap: 8px;
+  }
+  .brand-container img {
+    width: 30px;
+  }
+  nav {
+    gap: 0px;
+  }
+  .nav-links-li {
+    display: none;
+  }
+  .nav-links-li a{
+    display: none;
+  }
+  .resume-cta {
+    width: 110px;
+    height: 35px;
+    font-size: 20px;
+  }
+  .nav-lines {
+    display: inline-block;
+    background-color: #172937;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-lines img {
+    width: 30px;
+  }
+
+  /* intro section */
+  .intro {
+    padding: 30px 40px;
+    flex-direction: column;
+  }
+  .intro-title-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro-title-text-box{
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  .intro-title {
+    height: 50px;
+    font-size: 30px;
+  }
+  .profile-image {
+    display: block;
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .intro-subtitle {
+    gap: 4px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .intro-about {
+    margin-top: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+  .my-image img {
+    width: 250px;
+    display: none;
+  }
+  .bodyy {
+    padding: 40px 0;
+  }
+
+  /* myskills */
+  .myskills-title {
+    width: 130px;
+    height: 40px;
+    font-size: 30px;
+    gap: 5px;
+  }
+  .myskills-about {
+    width: 87%;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .myskills-languages {
+    width: 90%;
+    height: 275px;
+    padding: 15px;
+  }
+  .language-list {
+    gap: 0 10px;
+  }
+  .language-list-li {
+    height: 37px;
+    font-size: 16px;
+    gap: 5px;
+    padding: 10px;
+  }
+  .language-list-li img {
+    width: 23px;
+  }
+  .language-list-li-sql img {
+    width: 19px;
+  }
+
+  /* video-section */
+  .video-section {
+    gap: 10px;
+    margin-top: 50px;
+  }
+  .video-section-title {
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    gap: 5px;
+  }
+  .video-section-subtitle {
+    width: 87%;
+    height: 35px;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .video-section-button {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .video-section-button a {
+    font-size: 17px;
+  }
+  .video-section-videos {
+    width: 90%;
+  }
+  .video-section-video {
+    width: 32%;
+  }
+  .yt-video {
+    height: 200px;
+  }
+  .yt-video-details {
+    padding: 10px;
+  }
+  .yt-video-details-duration {
+    height: 20px;
+    margin: 4px 0;
+  }
+  .yt-video-details-title {
+    height: 30px;
+    font-size: 19px;
+  }
+  .yt-video-details-coach {
+    margin-top: 5px;
+    height: 20px;
+  }
+
+  /* projects-section */
+  .projects-section {
+    gap: 18px;
+    margin-top: 50px;
+  }
+  .projects-section-title {
+    height: 40px;
+    font-size: 30px;
+  }
+  .projects-section-about {
+    width: 87%;
+    height: 35px;
+    font-size: 20px;
+  }
+  .projects-section-projects {
+    width: 90%;
+  }
+  .projects-section-project {
+    width: 32%;
+  }
+  .projects-section-project-details {
+    padding: 20px 15px;
+    gap: 4px;
+  }
+  .projects-section-project-details-title {
+    height: 25px;
+    font-size: 22px;
+  }
+  .projects-section-project-details-about {
+    height: 28px;
+  }
+
+  /* education-section */
+  .education-section {
+    margin-top: 50px;
+  }
+  .education-section-title {
+    height: 40px;
+    font-size: 30px;
+  }
+  .edu-section-desc {
+    width: 100%;
+  }
+  .education-section-description {
+    width: 87%;
+    height: 35px;
+    font-size: 20px;
+  }
+  .education-section-list {
+    width: 90%;
+    height: fit-content;
+    gap: 15px;
+    justify-content: center;
+  }
+  .education-section-list-explorin,
+  .education-section-list-college,
+  .education-section-list-school1,
+  .education-section-list-school2 {
+    padding: 20px;
+    width: 100%;
+  }
+  .education-section-list-explorin-title,
+  .education-section-list-college-title,
+  .education-section-list-school1-title,
+  .education-section-list-school2-title {
+    height: 30px;
+    font-size: 20px;
+  }
+  .education-section-list-explorin-year,
+  .education-section-list-college-year,
+  .education-section-list-school1-year,
+  .education-section-list-school2-year {
+    height: 25px;
+    font-size: 20px;
+  }
+  .education-section-list-explorin-course,
+  .education-section-list-college-course,
+  .education-section-list-school1-course,
+  .education-section-list-school2-course {
+    height: 30px;
+  }
+  .education-section-list-explorin-image,
+  .education-section-list-college-image,
+  .education-section-list-school1-image,
+  .education-section-list-school2-image {
+    width: 95px;
+    height: 95px;
+  }
+
+  /* footer */
+  footer {
+    padding: 25px;
+  }
+  .footer-title {
+    width: 180px;
+    height: 45px;
+    font-size: 35px;
+  }
+  .footer-description {
+    width: 90%;
+    height: 55px;
+    font-size: 20px;
+  }
+  .footer-links {
+    flex-direction: column;
+    width: 40%;
+    height: 40px;   
+  }
+  .footer-button {
+    padding: 7px;
+  }
+  .footer-button a {
+    gap: 5px;
+  }
+  .footer-button a img {
+    width: 23px;
+  }
+  .footer-button a span {
+    height: 25px;
+    font-size: 16px;
+  }
+}

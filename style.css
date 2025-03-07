@@ -1,0 +1,582 @@
+:root {
+  --primary-orange1: #f37021;
+  --primary-orange2: #ff8153;
+  --primary-black-gray: #172937;
+  --pure-black: #000000;
+  --primary-black2: #1f1f1f;
+  --primary-blue: #172737;
+}
+/* available for all the selectors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  background: linear-gradient(to right, #fef5e5, #e4e5fe);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-blue);
+  align-items: center;
+  padding: 24px 38px;
+}
+.brand-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.brand-container img {
+  width: 36px;
+  border-radius: 50%;
+}
+.brand-container h4 {
+  width: 150px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #f2f2f2;
+}
+
+nav,
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-weight: 400;
+  font-size: 22px;
+  list-style: none;
+
+  /* to remove dots from of li */
+}
+.nav-links-li {
+    list-style: none;
+}
+.nav-links-li a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.resume-cta {
+  width: 138px;
+  height: 41px;
+  border: 1px solid #f37021;
+  border-radius: 8px;
+  font-size: 22px;
+  line-height: 27px;
+  background-color: var(--primary-blue);
+  color: white;
+}
+.resume-cta:hover {
+  background-color: #2c3a48;
+}
+.nav-lines {
+    display: none;
+}
+/* .brand-container {
+    background-color: blueviolet;
+} */
+/* es brand-container ki specificity kam and uppper vale .brand-container se (esme eske parent ki bhi specificity add ho rhi hai) */
+
+/* introsection */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-blue);
+  padding: 58px 70px;
+  color: white;
+  /* top/bttom: bock padding, left/right: inline padding */
+}
+.intro-text {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.intro-title {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 70px;
+  font-weight: 700;
+  font-size: 45px;
+}
+.profile-image{
+    display: none;
+}
+.intro-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  height: 79px;
+  font-weight: 600;
+  font-size: 28px;
+}
+.intro-subtitle span {
+  color: var(--primary-orange2);
+}
+.intro-about {
+  margin-top: 30px;
+  width: 573px;
+  height: fit-content;
+  font-weight: 400;
+  font-size: 22px;
+  color: #f2f2f2cc;
+  /* extra CC in the color is for opacity (here 80%) */
+}
+.my-image img {
+  width: 314px;
+  border-radius: 50%;
+}
+
+/* bodyy */
+.bodyy {
+  padding: 100px 0;
+  color: var(--primary-black2);
+  background: linear-gradient(to right, #fef5e5, #e4e5fe);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* myskills */
+.myskills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myskills-title {
+  color: var(--primary-black-gray);
+  width: 199px;
+  height: 56px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.myskills-title span {
+  color: var(--primary-orange1);
+}
+.myskills-about {
+  color: var(--primary-black2);
+  width: 1315px;
+  height: 70px;
+  font-weight: 400;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.myskills-languages {
+  color: var(--pure-black);
+  background-color: #fdfdfd;
+  border-radius: 20px;
+  width: 1273px;
+  height: 275px;
+  /* padding: 40px; */
+  box-shadow: 0 1px 7px 0 #00000040;
+}
+.language-list {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  /* first value vertical gap(gap between horzontal lines) 2nd value horizontal gap (gap between two items in a row) */
+  /* gap: vertical 0 kara taki ye gap mereko space-evenly ko disturb na, verna ye gap add ho rha tha lines ke bich and space-evenly nhi dikh rha tha */
+  align-content: space-evenly;
+}
+.language-list-li {
+  border: 1px solid var(--primary-orange1);
+  border-radius: 7px;
+  height: 46px;
+  font-weight: 400px;
+  line-height: 27px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 14px;
+}
+.language-list-li img {
+  width: 29px;
+}
+.language-list-li-sql img {
+  width: 23px;
+}
+
+/* video-section */
+.video-section {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.video-section-title {
+  width: 461px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--primary-black-gray);
+}
+.video-section-title span {
+  color: var(--primary-orange1);
+}
+.video-section-subtitle {
+  width: 1145px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-section-button {
+  width: 310px;
+  height: 62px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-orange1);
+}
+.video-section-button a {
+  color: white;
+  text-decoration: none;
+  /* font-weight: 500; */
+  /* 500 pe bahut bda lg rha */
+  font-size: 23px;
+  line-height: 27px;
+}
+.video-section-videos {
+  width: 1273px;
+  height: 357px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.video-section-video {
+  width: 405px;
+  height: 357px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 4px 0 #00000040;
+  border-radius: 20px;
+}
+.yt-video {
+  width: 100%;
+  height: 230px;
+  background-color: gray;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yt-video p {
+  color: var(--primary-orange1);
+}
+.yt-video-details {
+  background-color: white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+.yt-video-details-duration {
+  width: 214px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000b0;
+  /* last 2 latter represents the opacity */
+  display: flex;
+  align-items: center;
+  margin: 7px 0;
+}
+.yt-video-details-title {
+  width: 100%;
+  height: 37px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000d9;
+  display: flex;
+  align-items: center;
+}
+.yt-video-details-coach {
+  width: 100%;
+  height: 24px;
+  color: #000000b0;
+  display: flex;
+  align-items: center;
+}
+
+/* projects-section */
+.projects-section {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.projects-section-title {
+  width: 461px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--primary-black-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects-section-about {
+  width: 1182px;
+  height: 70px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--primary-black2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects-section-projects {
+  width: 1273px;
+  display: flex;
+  justify-content: space-between;
+}
+.projects-section-project {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 4px 0 #00000040;
+  border-radius: 20px;
+}
+.projects-section-project img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.projects-section-project-details {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  padding: 30px;
+  gap: 5px;
+}
+.projects-section-project-details-title {
+  width: fit-content;
+  height: 37px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  color: var(--primary-orange2);
+  display: flex;
+  align-items: center;
+}
+.projects-section-project-details-about {
+  width: fit-content;
+  height: 37px;
+  font-weight: 500;
+  line-height: 27px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.projects-section-project-details-description {
+  width: fit-content;
+  height: fit-content;
+  color: black;
+}
+
+/* education-section */
+.education-section {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.education-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 56px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--primary-black-gray);
+}
+.edu-section-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1182px;
+  height: 137px;
+}
+.education-section-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  line-height: 42px;
+}
+.education-section-list {
+  width: 1273px;
+  height: 378px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.education-section-list-explorin,
+.education-section-list-college,
+.education-section-list-school1,
+.education-section-list-school2 {
+  padding: 30px;
+  /* flex-grow: 1; */
+  /* this grow coming from it's parent */
+  display: flex;
+  align-items: center;
+  width: 48%;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 #00000040;
+  background-color: rgb(255, 255, 255);
+}
+.education-section-list-explorin-details,
+.education-section-list-college-details,
+.education-section-list-school1-details,
+.education-section-list-school2-details {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.education-section-list-explorin-title,
+.education-section-list-college-title,
+.education-section-list-school1-title,
+.education-section-list-school2-title {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  color: black;
+}
+.education-section-list-explorin-year,
+.education-section-list-college-year,
+.education-section-list-school1-year,
+.education-section-list-school2-year {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--primary-orange1);
+}
+.education-section-list-explorin-course,
+.education-section-list-college-course,
+.education-section-list-school1-course,
+.education-section-list-school2-course {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  line-height: 24px;
+  color: black;
+}
+.education-section-list-explorin-image,
+.education-section-list-college-image,
+.education-section-list-school1-image,
+.education-section-list-school2-image {
+  width: 116px;
+  height: 116px;
+  border: 1px solid #00000026;
+  border-radius: 50%;
+}
+
+/* footer */
+footer {
+  background-color: var(--primary-blue);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+.footer-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-orange1);
+  width: 250px;
+  height: 72px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+}
+.footer-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1182px;
+  height: 70px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+}
+.footer-links {
+  width: 726px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-button {
+  border: 1px solid var(--primary-orange1);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-black-gray);
+}
+.footer-button a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+  color: white;
+}
+.footer-button a img {
+  width: 32px;
+}
+.footer-button a span {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: fit-content;
+  font-weight: 400px;
+  font-size: 22px;
+  line-height: 33px;
+}
