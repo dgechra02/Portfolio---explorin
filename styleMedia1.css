@@ -1,5 +1,5 @@
 /* media query */
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 767.5px) {
   header {
     padding: 12px 12px;
   }
@@ -93,10 +93,10 @@
   .myskills-languages {
     width: 95%;
     height: fit-content;
-    padding: 20px;
+    padding: 12px;
   }
   .language-list {
-    gap: 5px 8px;
+    gap: 12px 6px;
   }
   .language-list-li {
     height: 30px;
@@ -259,6 +259,18 @@
     width: 80px;
     height: 80px;
   }
+  /* back to top */
+  .back-to-top {
+    padding: 0.6rem 0.6rem;
+    border-radius: 50%;
+  }
+  .back-to-top a span {
+    display: none;
+  }
+  .back-to-top a img {
+    display: block;
+    width: 16px;
+}
 
   /* footer */
   footer {

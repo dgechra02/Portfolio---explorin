@@ -17,7 +17,7 @@
     <!-- imported the poppins font -->
   </head>
   <body>
-    <header>
+    <header id="pageHead">
       <div class="brand-container">
         <img
           src="https://media.istockphoto.com/id/178032721/photo/flamy-symbol.jpg?s=612x612&w=0&k=20&c=wmoNWlXSuQeADNJ25xyz6ozfRI9KVjcXBOWtVMZCKWc="
@@ -27,17 +27,19 @@
       </div>
       <nav>
         <ul class="nav-links">
-          <li class="nav-links-li"><a href="#skills">Skills</a></li>
-          <li class="nav-links-li"><a href="#progress">Progress</a></li>
-          <li class="nav-links-li"><a href="#projects">Projects</a></li>
-          <li class="nav-links-li"><a href="#education">Education</a></li>
-          <li class="nav-links-li"><a href="#contact">Contact</a></li>
+          <li class="nav-links-li btn"><a href="#skills">Skills</a></li>
+          <li class="nav-links-li btn"><a href="#progress">Progress</a></li>
+          <li class="nav-links-li btn"><a href="#projects">Projects</a></li>
+          <li class="nav-links-li btn"><a href="#education">Education</a></li>
+          <li class="nav-links-li btn"><a href="#contact">Contact</a></li>
         </ul>
-        <button class="resume-cta">Resume</button>
-        <button class="nav-lines"><img src="./assests/4 lines (more option).svg" alt=""></button>
+        <button class="resume-cta btn">Resume</button>
+        <button class="nav-lines btn">
+          <img src="./assests/4 lines (more option).svg" alt="" />
+        </button>
       </nav>
     </header>
-    <hr>
+    <hr />
     <main>
       <div id="intro-box" class="intro">
         <div class="intro-text">
@@ -45,10 +47,15 @@
             <div class="intro-title-text-box">
               <h1 class="intro-title">Hi, I am Rajendra</h1>
               <h4 class="intro-subtitle">
-                An integral part of your success at <span>Explorin Academy</span>
+                An integral part of your success at
+                <span>Explorin Academy</span>
               </h4>
             </div>
-            <img class="profile-image" src="https://archive.wbcsd.org/var/site/storage/images/media/page-assets/new-projects/nature-action/roadmaps-to-nature-positive/154605-1-eng-GB/Roadmaps-to-Nature-Positive_720_square.jpg" alt="profile picture">
+            <img
+              class="profile-image"
+              src="./assests/My image.jpg"
+              alt="profile picture"
+            />
           </div>
           <p class="intro-about">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
@@ -59,7 +66,7 @@
         </div>
         <div class="my-image">
           <img
-            src="https://archive.wbcsd.org/var/site/storage/images/media/page-assets/new-projects/nature-action/roadmaps-to-nature-positive/154605-1-eng-GB/Roadmaps-to-Nature-Positive_720_square.jpg"
+            src="./assests/My image.jpg"
             alt="profile picture"
           />
         </div>
@@ -199,17 +206,20 @@
           <p class="video-section-subtitle">
             Here is a quick demo of my progress so far in web Developement!
           </p>
-          <button class="video-section-button">
+          <button class="video-section-button btn">
             <a href="#">Visit my LinkedIn</a>
           </button>
           <div class="video-section-videos">
             <div class="video-section-video">
               <div class="yt-video">
-                <!-- <video
-                  src="https://youtu.be/gviLB4ZABrg?si=rnbwgz3_bnLF2r44"
-                  controls
-                ></video> -->
-                <p>Youtube video</p>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://youtube.com/embed/gviLB4ZABrg"
+                  frameborder="0"
+                  allowfullscreen
+                  >first video</iframe
+                >
               </div>
               <div class="yt-video-details">
                 <span class="yt-video-details-duration">Week 1</span>
@@ -219,16 +229,14 @@
             </div>
             <div class="video-section-video">
               <div class="yt-video">
-                <!-- <iframe
-                  width="100px"
-                  height="100px"
-                  src="https://youtu.be/AP3_V7KXHs4?si=s6CrbV2IS6zGH5NL"
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://youtube.com/embed/1PnVor36_40"
                   frameborder="0"
                   allowfullscreen
                   >second video</iframe
-                > -->
-                <p>Youtube video</p>
-
+                >
               </div>
               <div class="yt-video-details">
                 <span class="yt-video-details-duration">Week 2</span>
@@ -240,11 +248,14 @@
             </div>
             <div class="video-section-video">
               <div class="yt-video">
-                <!-- <video
-                  src="https://youtu.be/wsTv9y931o8?si=l6g8-KC92r4rvKum"
-                ></video> -->
-                <p>Youtube video</p>
-
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://youtube.com/embed/wsTv9y931o8"
+                  frameborder="0"
+                  allowfullscreen
+                  >third video</iframe
+                >
               </div>
               <div class="yt-video-details">
                 <span class="yt-video-details-duration">Week 3</span>
@@ -263,62 +274,60 @@
           </p>
           <div class="projects-section-projects">
             <div class="projects-section-project">
-              <img
-                src="https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg"
-                alt=""
-              />
+              <img src="./assests/Kanban-board image.png" alt="" />
               <div class="projects-section-project-details">
                 <h2 class="projects-section-project-details-title">
-                  Project Name
+                  Kanban Board
                 </h2>
                 <span class="projects-section-project-details-about"
                   >About the project</span
                 >
                 <p class="projects-section-project-details-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                  non voluptate error aut ut quam nihil optio beatae debitis
-                  iste, velit accusantium earum dolores alias distinctio,
-                  tempora laboriosam nisi repudiandae?
+                  I developed a Kanban board application focused on task
+                  organization and management. The app provides an intuitive
+                  interface for categorizing tasks into different sections. Each
+                  section represents a stage in the workflow, making it easy to
+                  track progress. The application is ideal for managing team
+                  projects effectively. It ensures clarity and structure in task
+                  management processes. Future enhancements will include
+                  drag-and-drop functionality and real-time updates.
+                </p>
+              </div>
+            </div>
+            <div class="projects-section-project">
+              <img src="./assests/Todo App image.png" alt="" />
+              <div class="projects-section-project-details">
+                <h2 class="projects-section-project-details-title">Todo App</h2>
+                <span class="projects-section-project-details-about"
+                  >About the project</span
+                >
+                <p class="projects-section-project-details-description">
+                  I built an todo app for task listing and management. Through
+                  this app one can write their daily tasks and add in the list.
+                  Once a task is completed, they can either send it in the
+                  completed task tab by clicking on the check mark button or
+                  they can directly delete the task. In the completed tab, there
+                  are the tasks that are completed. Once you are done with all
+                  the task, you can also delete they from this tab. Tasks saves
+                  in the local storage, so they remains there even after closing
+                  or refreshing the page.
                 </p>
               </div>
             </div>
             <div class="projects-section-project">
               <img
-                src="https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg"
+                src="./assests/Different part clickable of an image project image.png"
                 alt=""
               />
               <div class="projects-section-project-details">
                 <h2 class="projects-section-project-details-title">
-                  Project Name
+                  Clickable Parts of Image
                 </h2>
                 <span class="projects-section-project-details-about"
                   >About the project</span
                 >
                 <p class="projects-section-project-details-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                  non voluptate error aut ut quam nihil optio beatae debitis
-                  iste, velit accusantium earum dolores alias distinctio,
-                  tempora laboriosam nisi repudiandae?
-                </p>
-              </div>
-            </div>
-            <div class="projects-section-project">
-              <img
-                src="https://t3.ftcdn.net/jpg/02/14/87/96/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg"
-                alt=""
-              />
-              <div class="projects-section-project-details">
-                <h2 class="projects-section-project-details-title">
-                  Project Name
-                </h2>
-                <span class="projects-section-project-details-about"
-                  >About the project</span
-                >
-                <p class="projects-section-project-details-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                  non voluptate error aut ut quam nihil optio beatae debitis
-                  iste, velit accusantium earum dolores alias distinctio,
-                  tempora laboriosam nisi repudiandae?
+                  In this project (in above shown image), if you click on the temple's image, it will redirect you to the their corresponding official website. In this way this image is clickable at it's different parts. And the most interesting thing is, I just built it only through HTML. 
                 </p>
               </div>
             </div>
@@ -344,7 +353,10 @@
                 </p>
               </div>
               <div class="education-section-list-explorin-image">
-                <!-- <img src="#" alt="" /> -->
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D560BAQHkbhezVpburw/company-logo_200_200/company-logo_200_200/0/1736338027928/explorin_logo?e=2147483647&v=beta&t=5buOP7eoLRaJMR61bJioyP72CUJt2Qcj5E8ngk__AAs"
+                  alt=""
+                />
               </div>
             </div>
             <div class="education-section-list-college">
@@ -358,7 +370,10 @@
                 </p>
               </div>
               <div class="education-section-list-college-image">
-                <img src="#" alt="" />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/2/2d/Indian_Institute_of_Technology_Roorkee_Logo.svg"
+                  alt=""
+                />
               </div>
             </div>
             <div class="education-section-list-school1">
@@ -372,7 +387,10 @@
                 </p>
               </div>
               <div class="education-section-list-school1-image">
-                <img src="#" alt="" />
+                <img
+                  src="https://princeeduhubblog.com/wp-content/uploads/2022/08/Prince-Eduhub-Logo.png"
+                  alt=""
+                />
               </div>
             </div>
             <div class="education-section-list-school2">
@@ -386,12 +404,21 @@
                 </p>
               </div>
               <div class="education-section-list-school2-image">
-                <img src="#" alt="" />
+                <img
+                  src="https://tips.tagore.education/assets/img/scienceschool01.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
+      <button class="back-to-top btn">
+        <a href="#pageHead"
+          ><span>Back to top</span
+          ><img src="./assests/up-arrow-svgrepo-com.svg" alt="up arrow"
+        /></a>
+      </button>
     </main>
     <footer id="contact">
       <h2 class="footer-title">Contact</h2>
@@ -399,9 +426,25 @@
         Feel free to reach out to me for any questions or opportunities!
       </p>
       <div class="footer-links">
-        <button class="footer-links-linkein footer-button"><a href="#"> <img src="./assests/linkedIn orange logo.svg" alt=""> <span>LinkedIn</span> </a></button>
-        <button class="footer-links-email footer-button"><a href="#"><img src="./assests/email orange logo.svg" alt=""> <span>dgrajendra2021@gmail.com</span></a></button>
-        <button class="footer-links-github footer-button"><a href=""><img src="./assests/github-orange-logo.svg" alt=""><span>Github</span></a></button>
+        <button class="footer-links-linkein footer-button">
+          <a href="#" target="_blank">
+            <img src="./assests/linkedIn orange logo.svg" alt="" />
+            <span>LinkedIn</span>
+          </a>
+        </button>
+        <button class="footer-links-email footer-button">
+          <a href="mailto:dgrajendra2021@gmail.com" target="_blank"
+            ><img src="./assests/email orange logo.svg" alt="" />
+            <span>dgrajendra2021@gmail.com</span></a
+          >
+        </button>
+        <button class="footer-links-github footer-button">
+          <a href="https://github.com/dgechra02" target="_blank"
+            ><img src="./assests/github-orange-logo.svg" alt="" /><span
+              >Github</span
+            ></a
+          >
+        </button>
       </div>
     </footer>
   </body>

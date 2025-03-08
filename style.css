@@ -18,6 +18,10 @@ body {
   background: linear-gradient(to right, #fef5e5, #e4e5fe);
 }
 
+.btn {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -55,7 +59,7 @@ nav ul {
   /* to remove dots from of li */
 }
 .nav-links-li {
-    list-style: none;
+  list-style: none;
 }
 .nav-links-li a {
   text-decoration: none;
@@ -72,10 +76,10 @@ nav ul {
   color: white;
 }
 .resume-cta:hover {
-  background-color: #2c3a48;
+  background-color: #000000;
 }
 .nav-lines {
-    display: none;
+  display: none;
 }
 /* .brand-container {
     background-color: blueviolet;
@@ -105,8 +109,8 @@ nav ul {
   font-weight: 700;
   font-size: 45px;
 }
-.profile-image{
-    display: none;
+.profile-image {
+  display: none;
 }
 .intro-subtitle {
   display: flex;
@@ -131,7 +135,8 @@ nav ul {
 }
 .my-image img {
   width: 314px;
-  border-radius: 50%;
+  height: auto;
+  border-radius: 10%;
 }
 
 /* bodyy */
@@ -182,7 +187,7 @@ nav ul {
   border-radius: 20px;
   width: 1273px;
   height: fit-content;
-  /* padding: 40px; */
+  padding: 30px;
   box-shadow: 0 1px 7px 0 #00000040;
 }
 .language-list {
@@ -190,7 +195,7 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px 20px;
+  gap: 30px 15px;
   /* first value vertical gap(gap between horzontal lines) 2nd value horizontal gap (gap between two items in a row) */
   /* gap: vertical 0 kara taki ye gap mereko space-evenly ko disturb na, verna ye gap add ho rha tha lines ke bich and space-evenly nhi dikh rha tha */
   align-content: space-evenly;
@@ -256,6 +261,9 @@ nav ul {
   border-radius: 8px;
   background-color: var(--primary-orange1);
 }
+.video-section-button:hover {
+    background-color: #d05b13;
+}
 .video-section-button a {
   color: white;
   text-decoration: none;
@@ -282,11 +290,13 @@ nav ul {
 .yt-video {
   width: 100%;
   height: 230px;
-  background-color: gray;
   border-radius: 20px 20px 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.yt-video iframe {
+  border-radius: 20px 20px 0 0;
 }
 .yt-video p {
   color: var(--primary-orange1);
@@ -513,8 +523,48 @@ nav ul {
 .education-section-list-school2-image {
   width: 116px;
   height: 116px;
-  border: 1px solid #00000026;
+  /* border: 1px solid #00000026; */
   border-radius: 50%;
+}
+.education-section-list-explorin-image img,
+.education-section-list-college-image img,
+.education-section-list-school1-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.education-section-list-school2-image img {
+  width: 100%;
+  height: 95%;
+  border-radius: 50%;
+}
+
+/* back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: var(--primary-black-gray);
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-orange1);
+}
+.back-to-top a {
+  text-decoration: none;
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-to-top a img {
+  display: none;
+  width: 20px;
+}
+.back-to-top:hover {
+  background-color: #000000;
 }
 
 /* footer */
@@ -557,13 +607,13 @@ footer {
 .footer-button {
   border: 1px solid var(--primary-orange1);
   border-radius: 8px;
-  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--primary-black-gray);
 }
 .footer-button a {
+  padding: 12px;
   display: flex;
   align-items: center;
   text-decoration: none;
