@@ -296,9 +296,10 @@
   }
   .footer-button a {
     gap: 2px;
+    padding: 2px;
   }
   .footer-button a img {
-    width: 14px;
+    width: 18px;
   }
   .footer-button a span {
     height: 15px;
